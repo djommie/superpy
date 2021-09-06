@@ -43,7 +43,7 @@ def get_available_products():
 
     and also:
 
-    ```
+```
     def get_expired_products():
     # Compares the bough and sold products and expiration dates and returns expired products
     bought_items = get_bought_items()
