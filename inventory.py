@@ -65,9 +65,8 @@ def get_expired_products():
     return expired_products
 
 
-# get avaiable product of one type
-
 def get_available_product(product_name):
+    # gets avaiable product of one type
     bought_items = get_bought_items()
     sold_ids = get_sold_ids()
     availabe_products = []
@@ -139,6 +138,7 @@ def display_sales():
 
 
 def display_purchases():
+    # Gets the bought items from bought.csv and shows relevant data in a table
     purchases = get_bought_items()
     table = Table(show_header=True, header_style="bold magenta")
     table.add_column('Product', style='dim', width=12)
