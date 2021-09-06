@@ -5,6 +5,7 @@ from inventory import bought_link
 
 
 def get_new_id(file):
+    # Gets a new id from either bought or sold
     with open(file) as f:
         reader = csv.reader(f)
         new_id = len(next(zip(*reader)))
@@ -12,6 +13,7 @@ def get_new_id(file):
 
 
 def get_expiration_date(days):
+    # Takes and integer and returns todays date plus the integer's number of days
     date = get_date()
     today = datetime.datetime.strptime(date, '%Y-%m-%d').date()
     new_date = today + datetime.timedelta(days=days)

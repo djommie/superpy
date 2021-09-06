@@ -16,7 +16,7 @@ def print_date():
 
 
 def set_date_today():
-    # set date to today
+    # Get today's date and write it to the txt file
     today = str(datetime.date.today())
     with open('./data/date.txt', 'w') as file:
         file.write(today)

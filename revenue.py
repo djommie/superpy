@@ -38,5 +38,6 @@ def get_revenue_between_dates():
 
 
 def print_revenue_between_dates():
+    # Seperate print function, so the orignal can still be used by other functions.
     revenue = get_revenue_between_dates()
     print(f'The total revenue in the given period was: ${revenue}')
