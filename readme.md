@@ -31,23 +31,21 @@ positional arguments:
   purchases           Reports on all purchases made
 ```
 
-Asks for two dates, earliest first and latest second in 'YYYY-MM-DD' format and shows the revenue between these dates
-
 ### `showdate`
 
-Shows the date currently maintained by the system, saved in date.txt (note: system date is not necessarily today's date)
+Shows the date currently maintained by the system, saved in `date.txt` (note: system date is not necessarily today's date)
 
--   `python ./main.py buy --product-name orange --price 0.8 --expiration-date 2020-05-01`
+-   `python ./main.py showdate`
 
 ### `advancedate`
 
-Asks for an integer and advances the system date by this many days by writing the new date to date.txt
+Asks for an integer and advances the system date by this many days by writing the new date to `date.txt`
 
 -   `python ./main.py advancedate`
 
 ### `settoday`
 
-Uses datetime to get today's date and writes this date to date.txt
+Uses datetime to get today's date and writes this date to `date.txt`
 
 -   `python ./main.py settoday`
 
