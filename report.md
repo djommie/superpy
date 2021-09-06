@@ -41,7 +41,7 @@ def get_available_products():
     return available_products
 ```
 
-    and also:
+and also:
 
 ```
     def get_expired_products():
