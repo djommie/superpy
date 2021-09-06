@@ -17,7 +17,7 @@ example:
 python main.py buy
 
 positional arguments:
-
+```
   -h, --help          Shows the help message and exits the program
   showdate            Shows the system's date
   advancedate         Advances the system's date by a given number of days
